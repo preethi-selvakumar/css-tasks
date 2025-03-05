@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - CSS 123</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            width: 100%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .profile-card h2 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .profile-card p {
+            font-size: 14px;
+            color: #777;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="team-container">
+            <div class="profile-card">
+                <img src="" alt="Team Member">
+                <h2>Alice Johnson</h2>
+                <p>Frontend Developer</p>
+            </div>
+    
+            <div class="profile-card">
+                <img src="" alt="Team Member">
+                <h2>Bob Smith</h2>
+                <p>UI/UX Designer</p>
+            </div>
+    
+            <div class="profile-card">
+                <img src="" alt="Team Member">
+                <h2>Charlie Davis</h2>
+                <p>Backend Developer</p>
+            </div>
+    
+            <div class="profile-card">
+                <img src="" alt="Team Member">
+                <h2>Diana White</h2>
+                <p>Project Manager</p>
+            </div>
+        </section>
+    </main>
+   
+
+</body>
+</html>

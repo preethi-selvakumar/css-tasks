@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - CSS 130</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            color: #555;
+            padding: 30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .feature {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .feature-highlight {
+            background-color: #007bff;
+            color: white;
+            grid-column: span 2;
+            grid-row: span 2;
+            font-size: 22px;
+            padding: 30px;
+        }
+
+        .feature h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Exclusive Features</h1>
+        <p>Discover what makes our platform unique.</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <article class="feature feature-highlight">
+                <h2>Premium Service</h2>
+                <p>Experience the best-in-class solutions tailored for your success.</p>
+            </article>
+
+            <article class="feature">
+                <h2>Cloud Solutions</h2>
+                <p>Seamlessly integrate with our cloud-based technology for efficiency.</p>
+            </article>
+        
+            <article class="feature">
+                <h2>Security & Privacy</h2>
+                <p>Top-notch security features ensuring your data is always protected.</p>
+            </article>
+        
+            <article class="feature">
+                <h2>Expert Support</h2>
+                <p>24/7 customer support to assist with your needs and queries.</p>
+            </article>
+
+            <article class="feature">
+                <h2>Collaboration Tools</h2>
+                <p>Enhance teamwork with real-time collaboration features.</p>
+            </article>
+
+            <article class="feature">
+                <h2>Latest Updates</h2>
+                <p>Stay informed with our latest insights, blogs, and innovations.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tech Innovations Inc. | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

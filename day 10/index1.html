@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 Tasks - CSS 118</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        main {
+            width: 50%;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        section {
+            display: grid;
+            grid-template-rows: 100px 100px 100px; 
+            grid-template-columns: 100px 100px 100px; 
+            gap: 10px;
+            margin-top: 40px;
+        }
+
+        .item {
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <main>
+        <section>
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+            <div class="item">Item 7</div>
+            <div class="item">Item 8</div>
+            <div class="item">Item 9</div>
+        </section>
+    </main>
+</body>
+</html>

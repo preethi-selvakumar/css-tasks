@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - CSS 129</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .feature {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .feature-highlight {
+            background-color: #007bff;
+            color: white;
+            grid-column: span 2;
+            grid-row: span 2;
+            font-size: 22px;
+            padding: 30px;
+        }
+
+        .feature h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="container">
+            <div class="feature feature-highlight">
+                <h2>Exclusive Feature</h2>
+                <p>This is the main feature that stands out and provides the most value.</p>
+            </div>
+
+            <div class="feature">
+                <h2>Feature 1</h2>
+                <p>Learn about our unique services and how they can benefit you.</p>
+            </div>
+        
+            <div class="feature">
+                <h2>Feature 2</h2>
+                <p>Explore our latest technology and cutting-edge solutions.</p>
+            </div>
+        
+            <div class="feature">
+                <h2>Feature 3</h2>
+                <p>Enhance your skills with our expert training programs.</p>
+            </div>
+
+            <div class="feature">
+                <h2>Feature 4</h2>
+                <p>Join our growing community and network with professionals.</p>
+            </div>
+
+            <div class="feature">
+                <h2>Feature 5</h2>
+                <p>Stay updated with our latest news, blogs, and insights.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

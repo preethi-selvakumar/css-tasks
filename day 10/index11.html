@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - CSS 128</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <section>
+            <h2>Web Development</h2>
+            <p>Learn HTML, CSS, JavaScript, and modern frameworks to build responsive websites.</p>
+        </section>
+
+        <section>
+            <h2>UI/UX Design</h2>
+            <p>Discover best practices in UI/UX design to create engaging digital experiences.</p>
+        </section>
+    </main>
+
+</body>
+</html>
