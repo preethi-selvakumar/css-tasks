@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 - CSS 146</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .image-container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 300px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .image-container img:hover {
+            filter: grayscale(100%);
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="image-container">
+            <h2>Our Special Dish</h2>
+            <img src="assets/images/omelet-with-fresh-tomatoes-avocado-mozzarella-cheese-omelette-salad-breakfast_2829-2911.webp" alt="Delicious food">
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('assets/images/pure-nature-landscape-single-tree-in-green-field-free-photo.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+    filter: brightness(95%) contrast(110%);
+}
+
+header {
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+.content {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 500px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+    opacity: 0;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 80%;
+    transform: translateX(-40%);
+    transition: opacity 0.3s, transform 0.3s ease-in-out;
+}
+
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 60%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background-color: rgba(12, 8, 8, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.modal p {
+    color: rgb(250, 7, 7);
+}

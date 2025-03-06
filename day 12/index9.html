@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 - CSS 152</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .carousel {
+            position: relative;
+            width: 300px;
+            height: 50px;
+            overflow: hidden;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .text {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            animation: fadeText 6s infinite;
+        }
+
+        .text:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .text:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .text:nth-child(3) {
+            animation-delay: 4s;
+        }
+
+        @keyframes fadeText {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="carousel">
+            <div class="text">Welcome to Our Website</div>
+            <div class="text">Explore Our Services</div>
+            <div class="text">Contact Us for More Info</div>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

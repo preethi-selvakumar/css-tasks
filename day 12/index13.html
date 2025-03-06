@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 - CSS 156</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+            color: #333;
+        }
+
+        .services {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Our Featured Services</h2>
+    </header>
+
+    <main class="services">
+        <section class="card">
+            <h3>Web Development</h3>
+            <p>We build modern and responsive websites.</p>
+        </section>
+
+        <section class="card">
+            <h3>Graphic Design</h3>
+            <p>Creative and engaging designs for your brand.</p>
+        </section>
+
+        <section class="card">
+            <h3>SEO Optimization</h3>
+            <p>Improve your website's ranking on search engines.</p>
+        </section>
+    </main>
+
+</body>
+</html>

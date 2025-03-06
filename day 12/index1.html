@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 - CSS 144</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        .fading-text {
+            font-size: 24px;
+            font-weight: bold;
+            opacity: 1;
+            animation: fadeEffect 2s infinite alternate;
+        }
+
+        @keyframes fadeEffect {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.3;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="fading-text">Welcome to My Website</h1>
+        </section>
+    </main>
+</body>
+</html>

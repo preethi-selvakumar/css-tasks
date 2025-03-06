@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 - CSS 153</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .content-box {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background: #007bff;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .hover-text {
+            position: absolute;
+            bottom: -60px;
+            opacity: 0;
+            transition: bottom 0.5s ease, opacity 0.5s ease;
+        }
+
+        .content-box:hover .hover-text {
+            bottom: 20px;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="content-box">
+        <h2>Hover Here</h2>
+        <p class="hover-text">Hello, Welcome!</p>
+    </section>
+
+</body>
+</html>

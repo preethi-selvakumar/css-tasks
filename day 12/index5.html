@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 - CSS 148</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .message-box {
+            background: #007bff;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: opacity 0.5s ease-in-out;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .message-box:active {
+            opacity: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Special Announcement</h2>
+            <p class="message-box">Limited-time offer! Click here to reveal the next surprise.</p>
+        </section>
+        
+    </main>
+   
+
+</body>
+</html>
