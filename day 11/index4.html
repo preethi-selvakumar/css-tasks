@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 CSS 134</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 70px; 
+            padding-bottom: 60px; 
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #fdd835;
+        }
+
+        main {
+            width: 60%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">My Website</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+        <section>
+            <h2>Welcome to My Website</h2>
+        </section>
+
+        <section>
+            <h2>About Web Development</h2>
+            <p>Web development is the process of building and maintaining websites. It involves various technologies like HTML, CSS, JavaScript, and frameworks like React and Angular.</p>
+        </section>
+
+        <section>
+            <h2>Frontend vs Backend</h2>
+            <p>Frontend development focuses on user interfaces, while backend development deals with databases, servers, and APIs.</p>
+        </section>
+
+        <section>
+            <h2>Why Learn Web Development?</h2>
+            <ul>
+                <li>High demand for web developers</li>
+                <li>Opportunity to work remotely</li>
+                <li>Creativity and problem-solving skills</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Popular Technologies</h2>
+            <p>Some popular web development technologies include:</p>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Angular, Vue.js</li>
+                <li>Node.js, Express, Django</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Start Your Web Development Journey</h2>
+            <p>Learning web development is an exciting journey! Start by building small projects and gradually move to complex applications.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 CSS 136</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        main {
+            width: 60%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .open-btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .floating-box {
+            position: absolute;
+            top: 120px;
+            right: 20px;
+            background: #ff5733;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            font-size: 16px;
+            z-index: 1000; 
+        }
+
+        footer {
+            width: 100%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sticky Header & Modal Example</h1>
+    </header>
+
+     
+     <div class="floating-box">Important Notice: This box stays on top!</div>
+
+    <main>
+        <section>
+            <h2>Welcome to Our Website</h2>
+            <p>Learn about web development and styling using CSS.</p>
+        </section>
+
+        <section>
+            <h2>Sticky Header</h2>
+            <p>This header remains at the top of the page when you scroll.</p>
+        </section>
+
+        <section>
+            <h2>CSS Modal Example</h2>
+            <p>Click the button below to see the modal popup.</p>
+            <button class="open-btn">Open Modal</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Development | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+
+

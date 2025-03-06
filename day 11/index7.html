@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 - CSS 137</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        main {
+            width: 60%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .highlight {
+            position: relative;
+            background: yellow;
+            padding: 3px 6px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .highlight::after {
+            content: " (More details appear on hover)";
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background: #333;
+            color: white;
+            font-size: 14px;
+            padding: 4px;
+            border-radius: 4px;
+            display: none; 
+        }
+
+        .highlight:hover::after {
+            display: block;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sticky Header & Highlighted Text Example</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction to Web Development</h2>
+            <p>Web development involves creating websites and web applications using languages like <span class="highlight">HTML, CSS, and JavaScript</span>. It includes frontend and backend development.</p>
+        </section>
+
+        <section>
+            <h2>Why Use a Sticky Header?</h2>
+            <p>A sticky header improves navigation by keeping important elements like menus and branding visible while scrolling. This is especially useful for **long webpages** and **user-friendly designs**.</p>
+        </section>
+
+        <section>
+            <h2>Using Hover Effects in Web Design</h2>
+            <p>Hover effects enhance user experience by providing **interactive feedback**. A simple example is highlighting **important terms** like <span class="highlight">CSS animations</span>, where additional information appears when hovered.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Development | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 CSS 135</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fdd835;
+        }
+
+        main {
+            width: 60%;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">My Website</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to My Website</h2>
+        </section>
+
+        <section>
+            <h2>About Sticky Headers</h2>
+            <p>A sticky header remains at the top of the page while scrolling, ensuring easy navigation without taking up too much space.</p>
+        </section>
+
+        <section>
+            <h2>Benefits of Sticky Headers</h2>
+            <ul>
+                <li>Improves navigation accessibility</li>
+                <li>Enhances user experience</li>
+                <li>Provides quick access to important links</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How It Works</h2>
+            <p>The 'position: sticky;' property makes the header stay at the top when scrolling down.</p>
+        </section>
+
+        <section>
+            <h2>Keep Scrolling</h2>
+            <p>More content here... Scroll down to see how the sticky header stays in place.</p>
+        </section>
+
+        <section>
+            <h2>End of Page</h2>
+            <p>This is the last section. Notice that the header is still at the top.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

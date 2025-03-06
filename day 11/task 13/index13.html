@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 - CSS 143</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        article {
+            position: relative; 
+            width: 80%;
+            max-width: 600px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .image-container {
+            position: relative;
+            height: 250px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            z-index: 1; 
+        }
+
+        .content {
+            position: relative;
+            z-index: 2; 
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .content p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <div class="image-container">
+                <img src="assets/images/html-code-on-computer-monitor-software-web-developer-programming-code-photo.jpg" alt="Technology Image">
+                <div class="overlay">
+                    <h2>Master Web Development</h2>
+                </div>
+            </div>
+            <div class="content">
+                <h2>Why Learn Web Development?</h2>
+                <p>Web development allows you to build interactive and dynamic websites that power the digital world.</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+        </article>
+    </main>
+    
+
+</body>
+</html>
