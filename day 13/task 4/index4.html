@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - CSS 160</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Tablet*/
+        @media (min-width: 601px) and (max-width: 1024px) {
+
+            .image-container img {
+                width: 50%;
+            }
+        }
+
+        /* Desktop  */
+        @media (min-width: 1025px) {
+
+            .image-container img {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Smart Image Optimization</h1>
+        <p>Modern AI and cloud-based solutions dynamically resize images to improve loading speed and optimize performance across all devices.</p>
+
+        <div class="image-container">
+            <img src="assets/images/360_F_265254915_RF3cCXrUXd752TlCE06GgXfLDpxxf5gx.webp"
+                alt="AI-powered image optimization">
+            <img src="assets/images/cloud-computing-technology-online-data-storage-business-network-concept_31965-13411.webp"
+                alt="Cloud storage image optimization">
+        </div>
+    </main>
+</body>
+
+</html>

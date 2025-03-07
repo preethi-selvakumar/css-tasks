@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - CSS 164</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .message {
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .message p {
+            margin-top: 10px;
+        }
+
+        /* Portrait Mode  */
+        @media (orientation: portrait) {
+            body {
+                background-color: #f4f4f4;
+            }
+            .message {
+                background-color: #28a745;
+                color: white;
+            }
+
+        }
+
+        /* Landscape Mode  */
+        @media (orientation: landscape) {
+            body {
+                background-color: #222;
+            }
+            .message {
+                background-color: #ff5733;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="message">
+            <h2>Artificial Intelligence (AI)</h2>
+            <p>AI is revolutionizing industries with automation and smart decision-making.</p>
+            <p>Rotate your device to see a different style!</p>
+        </section>
+    </main>
+</body>
+</html>

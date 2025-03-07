@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - CSS 169</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+        }
+
+        main {
+            flex: 1; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        article {
+            max-width: 600px;
+            text-align: justify;
+        }
+
+        aside {
+            margin-top: 20px;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            text-align: center;
+        }
+
+        aside ul {
+            list-style-type: none;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+        }
+
+        /*  Tablet  */
+        @media (min-width: 768px) and (orientation: landscape) {
+            main {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+                text-align: left;
+            }
+
+            article, aside {
+                width: 45%;
+            }
+
+            aside {
+                margin-top: 0;
+            }
+        }
+
+        /*  Large Desktop  */
+        @media (min-width: 1920px) {
+            body {
+                font-size: 18px;
+            }
+
+            header, footer {
+                padding: 20px;
+            }
+
+            main {
+                max-width: 1200px;
+                margin: auto;
+            }
+
+            article, aside {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <p>Exploring Web Development</p>
+    </header>
+
+    <main>
+        <article>
+            <h2>Understanding Responsive Design</h2>
+            <p>Responsive design ensures that websites work well on different devices, improving user experience.</p>
+        </article>
+
+        <aside>
+            <h3>Latest Updates</h3>
+            <ul>
+                <li>CSS Grid vs. Flexbox</li>
+                <li>How to Improve Website Performance</li>
+                <li>Top 5 Web Design Trends</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Dev Insights</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - CSS 166</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        @media (min-width: 768px) {
+            .image-container img:hover {
+                transform: scale(1.1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .button:hover {
+                background-color: #0056b3;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Development Trends</h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="image-container">
+                <img src="assets/images/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.webp" alt="Web Development">
+            </div>
+            <p>Explore the latest technologies in front-end and back-end development.</p>
+            <a href="#" class="button">Learn More</a>
+        </section>
+    </main>
+    
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - CSS 158</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #333;
+        }
+
+        p {
+            font-size: 22px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /*  Mobile devices  */
+        @media (max-width: 600px) { 
+            h1 {
+                font-size: 20px; 
+            }
+            p {
+                font-size: 14px; 
+            }
+        }
+
+        /* Tablet devices */
+        @media (min-width: 601px) and (max-width: 1024px) { 
+            h1 {
+                font-size: 30px; 
+            }
+            p {
+                font-size: 18px; 
+            }
+        }
+
+        /*  Laptops & Desktops */
+        @media (min-width: 1025px) { 
+            h1 {
+                font-size: 40px; 
+            }
+            p {
+                font-size: 22px; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Future of Web Technology</h1>
+    </header>
+
+    <main>
+        <p>With evolving web technologies, responsive design ensures a seamless user experience across all devices. Scalable typography enhances readability on mobile, tablet, and desktop screens.</p>
+    </main>
+
+</body>
+</html>

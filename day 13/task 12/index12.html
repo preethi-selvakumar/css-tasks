@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - CSS 168</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #d1d8df;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #007bff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: white;
+        }
+
+        main {
+            flex-grow: 1; 
+            width: 90%;
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        .blog-image {
+            width: 50%;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            main {
+                box-shadow: none;
+                border: 1px solid black;
+            }
+
+            header, footer {
+                background-color: white;
+                color: black;
+                border-bottom: 1px solid black;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Development Blog</h1>
+    </header>
+
+    <main>
+        <article>
+            <h1>The Importance of Web Development</h1>
+            <img src="assets/images/360_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.webp" alt="Web Development" class="blog-image">
+            <p>Web development is the process of creating and maintaining websites. It involves various technologies like HTML, CSS, JavaScript, and frameworks such as React and Angular. A well-designed website improves user experience and helps businesses grow online.</p>
+        </article>
+
+        <article>
+            <h2>Why Learn Web Development?</h2>
+            <p>In today's digital world, having a website is essential for businesses, bloggers, and professionals. Web development offers career opportunities in frontend, backend, and full-stack development. By learning web technologies, you can build interactive and user-friendly websites.</p>
+        </article>
+    </main>
+
+    <footer>&copy; 2025 WebDev Blog | All Rights Reserved</footer>
+
+</body>
+</html>

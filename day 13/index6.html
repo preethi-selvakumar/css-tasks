@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - CSS 162</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f8f9fa;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Mobile */
+        .btn {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+
+        /* Tablet */
+        @media (min-width: 600px) {
+            .btn {
+                font-size: 16px;
+                padding: 12px 24px;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            .btn {
+                font-size: 18px;
+                padding: 15px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Join Our Newsletter</h1>
+        <p>Stay updated with the latest tech news and insights.</p>
+    </header>
+
+    <main>
+        <button class="btn">Subscribe Now</button>
+    </main>
+
+</body>
+
+</html>

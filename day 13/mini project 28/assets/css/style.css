@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #08417a, #00aaff);
+    color: white;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.hero button {
+    background-color: white;
+    color: #0073e6;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #005bb5;
+    color: white;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 30px;
+    background: white;
+}
+
+.feature {
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+/* Pricing Section */
+.pricing {
+    background: #eef7ff;
+    padding: 50px 20px;
+}
+
+.pricing h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.pricing-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.plan {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h3 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .features, .pricing-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature, .plan {
+        width: 90%;
+    }
+}
