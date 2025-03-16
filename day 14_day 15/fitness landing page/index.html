@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14. Fitness Landing Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Elite Gym</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home">
+            <video class="background-video" autoplay loop muted poster="assets/images/gym bg.webp">
+                <source src="assets/videos/video.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+            <div class="home-content">
+                <h2>Train Hard, Stay Strong</h2>
+                <p>Join our elite fitness programs and transform your life today!</p>
+            </div>
+        </section>
+
+        <section class="programs" id="programs">
+            <h2>Our Fitness Programs</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Yoga</h3>
+                    <p>Relax and strengthen your mind.</p>
+                </div>
+                <div class="card">
+                    <h3>Cardio</h3>
+                    <p>Boost your endurance and stamina.</p>
+                </div>
+                <div class="card">
+                    <h3>Strength Training</h3>
+                    <p>Build muscle with expert trainers.</p>
+                </div>
+                <div class="card">
+                    <h3>Zumba</h3>
+                    <p>Dance your way to fitness.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="plans" id="plans">
+            <h2>Our Membership Plans</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Basic Plan</h3>
+                    <p>Gym access & 1 class/week</p>
+                    <button>Join Now</button>
+                </div>
+                <div class="card">
+                    <h3>Standard Plan</h3>
+                    <p>Gym access & 3 classes/week</p>
+                    <button>Join Now</button>
+                </div>
+                <div class="card">
+                    <h3>Premium Plan</h3>
+                    <p>Unlimited gym & classes</p>
+                    <button>Join Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label>Name:</label>
+                <input type="text" required>
+                <label>Email:</label>
+                <input type="email" required>
+                <label>Message:</label>
+                <textarea rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Elite Gym | Train Hard, Stay Strong!</p>
+    </footer>
+
+    <button class="signup-btn">Sign Up Now</button>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Dropdown</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Logo Styling */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Navigation Menu */
+        nav {
+            position: relative;
+        }
+
+        /* Navigation Links */
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:focus {
+            background-color: #555;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 150px;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover,
+        .dropdown-content a:focus {
+            background-color: #555;
+        }
+
+        /* Show dropdown on hover */
+        nav ul li:hover .dropdown-content,
+        nav ul li:focus-within .dropdown-content {
+            display: block;
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            background-color: #fff;
+            height: 3px;
+            width: 25px;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                display: none;
+                width: 100%;
+                background-color: #333;
+            }
+
+            nav ul li {
+                width: 100%;
+            }
+
+            nav ul li a {
+                padding: 15px;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">My Logo</h1>
+        <nav>
+            <div class="menu-toggle" tabindex="0" aria-label="Toggle navigation menu" onclick="document.querySelector('nav ul').classList.toggle('show');">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Welcome to My Website</h2>
+                <p>This is a responsive navbar with a dropdown menu implemented using only HTML and CSS.</p>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>
