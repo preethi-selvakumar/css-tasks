@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #faf3e0;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #5b0e2d;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcccb;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-image: url('/assets/images/restaurant-background-ixeabgacjyocjjt4.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    background-color: #5b0e2d;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.hero p {
+    margin: 15px auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #8c1f4a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #b02a5e;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    background-color: #c98f55;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.about h2 {
+    background-color: #5b0e2d;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+/* Menu Section */
+.menu {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.menu h2 {
+    background-color: #5b0e2d;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.menu-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.menu-table th,
+.menu-table td {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.menu-table th {
+    font-weight: bold;
+    color: #8c1f4a;
+    font-size: 18px;
+    background-color: #ffe4c4;
+}
+
+.menu-table td:hover {
+    background-color: #ffe4c4;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #5b0e2d;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    background-color: #8c1f4a;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.contact p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.about, 
+.contact, 
+.menu {
+    padding: 60px 20px; 
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #3e081e;
+    color: white;
+}
+
+/* mobile */        
+@media (max-width: 767px) {
+    header {
+        position: static;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .menu-table {
+        width: 100%;
+    }
+
+}
+
+/* Laptop & Larger Screens */
+@media (min-width: 1024px) {
+
+    .hero {
+        height: 80vh;
+        padding: 100px 20px;
+    }
+
+    .menu-table {
+        width: 60%;
+    }
+}
+
+/*  Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .hero {
+        height: 70vh;
+        padding: 60px 20px;
+    }
+
+    .menu-table {
+        width: 90%;
+    }
+
+    .about,
+    .contact {
+        padding: 40px 20px;
+    }
+}
