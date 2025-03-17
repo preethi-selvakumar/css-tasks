@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12. Responsive Grid Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Preethi</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I'm currently learning MERN stack development, focusing on MongoDB, Express.js, React.js, and Node.js.
+            </p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I am an aspiring MERN stack developer currently undergoing training.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="assets/images/animated landing page .png" alt="Project 1">
+                    <div class="details">
+                        <h3>Animated Landing Page</h3>
+                        <p>A visually appealing homepage with animated text, smooth background transitions, and a glowing CTA button. Fully responsive.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/food recipe page.png" alt="Project 2">
+                    <div class="details">
+                        <h3>Food Recipe Page</h3>
+                        <p>A single-page recipe layout with an image overlay, ingredients list, step-by-step instructions, and a fixed "Back to Top" button.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Preethi | MERN Stack Developer</p>
+    </footer>
+
+</body>
+
+</html>
